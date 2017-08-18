@@ -1,0 +1,8 @@
+Proceso AreadelRectangulo
+	Escribir "Cuanto es su base?";
+	leer base; 
+	Escribir "Cuanto es su altura?";
+	Leer altura;
+	area<-base*altura;
+	Escribir "Su area es " area ;	
+FinProceso
