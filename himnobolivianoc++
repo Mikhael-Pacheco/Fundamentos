@@ -1,0 +1,23 @@
+// Himno Boliviano.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int main()
+{
+	cout<<"Bolivianos el hado propicio"<< endl;
+	cout<<"Corono nuestros votos y anhelos"<< endl;
+	cout<<"Es ya libre, ya libre este suelo"<< endl;
+	cout<<"Ya ceso su servil condicion"<< endl;
+
+	getch();
+
+
+
+	return 0;
+}
+
