@@ -1,0 +1,23 @@
+// Elecciones.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+#include<iostream>
+
+using namespace std;
+
+void main(){
+
+int a;
+
+cout<<"Ingrese su edad";
+cin>>a;
+
+if(a>=18)
+  cout<<"Puede Votar";
+else
+	cout<<"No puede Votar";
+
+getch();
+}
