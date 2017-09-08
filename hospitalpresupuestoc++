@@ -1,0 +1,37 @@
+// Hospital.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+	float g, t, p, M;
+	cout<<"Ingrese el Presupuesto Anual"<<endl;
+	cin>> M;
+	
+	if (M>1000000){
+       g= M*0.35;
+	   t= M*0.25;
+	   p= M*0.25;
+
+	}
+	else{
+       g= M*0.4;
+	   t= M*0.3;
+	   p= M*0.3;
+	}
+	cout<<"Presupuesto de Ginecologia"<<endl;
+	cout<<g<<endl;
+    cout<<"Presupuesto de Traumatologia"<<endl;
+	cout<<t<<endl;
+	cout<<"Presupuesto de Pediatria"<<endl;
+	cout<<p<<endl;
+
+	getch();
+
+}
+
