@@ -1,0 +1,43 @@
+#include “stdafx.h”
+#include <iostream>
+#include “conio.h”
+
+Using namespace std;
+
+Void main () {
+S=0;
+Do {
+        		Cout<< "Menu"<<endl;
+        		Cout<< "1. Hamburguesas              Bs.3"<<endl;
+        		Cout<< "2. Hamburguesa con Queso     Bs.5"<<endl;
+        		Cout<< "3. Papas Fritas              Bs.2"<<endl;
+        		Cout<< "4. Soda                      Bs.2.5"<<endl;
+        		Cout<< "0. Salir"<<endl;
+        		Cout<< "Ingrese un numero de opcion del Menu"<<endl;
+        		Cin>> opcion>>endl;
+		if (opcion=0)
+			cout<< "salir";
+		else{
+			cout<< "Ingrese la cantidad"<<endl;
+			cin>> cantidad;
+			switch opcion {
+				case ‘1’:
+					totalp=cantidad*3;
+				case ‘2’:
+					totalp=cantidad*5;
+				case ‘3’:
+					totalp=cantidad*2;
+				case ‘4’:
+					totalp=cantidad*2.5;
+				default:
+					cout<< "opcion invalida";
+				}   
+			}
+       		 if (opcion !=0)
+			s=s+totalp;
+    	}
+while (opcion = 0);
+   	cout<< "el total de la cuenta es: "<< s;
+	getch ();
+}
+
