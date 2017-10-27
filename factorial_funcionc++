@@ -1,0 +1,45 @@
+// 8888.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+float serie(float X, int N) ;
+
+void main()
+{
+
+   float X,S,N;
+   
+   cout<<"Ingrese el numero X : ";
+   cin>> X;
+   cout<<"Ingrese su numero N : ";
+   cin>>N;
+   S=serie(X,N);
+   cout<<"El valor de la sumatoira es:  "<<S<<endl;
+   getch();
+}
+
+   float serie(float X,int N){
+     int I, i, factorial;
+     float S, P;
+     S=(3.1416/5);
+     for(I=2;I<=N;I=I+2)
+	 {
+		 factorial=1;
+       for(i=2; i<=N; i++)
+	   {
+	     factorial=factorial*i;
+	    }
+	  P=pow(X,I)/factorial;
+	  P=P*(-1);
+	  S=S+P;
+          
+	   
+   }
+   return S;
+   }
