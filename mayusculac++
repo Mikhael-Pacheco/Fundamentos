@@ -1,0 +1,31 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void mayusculas(char letra ,int &nummayusculas);
+
+void main() 
+{
+	char letra;
+	int numero,nummay=0;
+	cout<<"Ingrese el numero de letras"<<endl;
+	cin>>numero;
+	for(int i=0; i<numero; i++)
+	{
+		cout<<"Ingrese una letra"<<endl;
+			cin>>letra;
+			nummayusculas(letra,nummay);
+   }
+	cout<<"El numero de mayusculas es"<<nummay<<endl;
+	getch();
+}
+
+	
+void mayusculas(char letra, int &nummayusculas)
+	{
+		
+			if((letra>='A')&&(letra<='Z'))
+				nummayusculas++;
+		
+}
